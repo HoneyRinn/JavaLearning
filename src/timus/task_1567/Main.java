@@ -9,11 +9,11 @@ public class Main {
         //long startTime = System.currentTimeMillis();
         int count = 0;
         char[] convertedText = text.toCharArray();
-        for (int i = 0; i < convertedText.length; i++) {
-            if (convertedText[i] <= 96)
-                count += convertedText[i] == ' ' ? 1 : (convertedText[i] == '.' ? 1 : (convertedText[i] == ',' ? 2 : 3));
+        for (char c : convertedText) {
+            if (c <= 96)
+                count += c == ' ' ? 1 : (c == '.' ? 1 : (c == ',' ? 2 : 3));
             else
-                count += (convertedText[i] % 96) % 3 == 0 ? ((convertedText[i] % 96) % 3) + 3 : (convertedText[i] % 96) % 3;
+                count += (c % 96) % 3 == 0 ? ((c % 96) % 3) + 3 : (c % 96) % 3;
         }
         System.out.println(count);
         //long endTime = System.currentTimeMillis();
