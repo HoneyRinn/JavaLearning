@@ -1,6 +1,5 @@
 package timus.task_1319;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
