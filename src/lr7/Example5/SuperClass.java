@@ -8,6 +8,7 @@ public class SuperClass {
     }
 
     public void toConsole() {
-        System.out.printf("Class Name = " + this.getClass().getSimpleName() + "\nTextField = " + this.textFiled);
+        System.out.printf("Class Name = " + this.getClass().getSimpleName() +
+                "\nTextField = " + this.textFiled);
     }
 }
