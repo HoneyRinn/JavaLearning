@@ -1,4 +1,4 @@
-package lr8.Examples;
+package lr8;
 
 import java.io.FileInputStream;
 import java.io.IOException;
